@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat",sans-serif;
+}
+
+.container{
+	max-width: 1300px;
+	padding: 100px 15px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title{
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.text{
+	font-size: 20px;
+}
+.nav-item{
+	display:inline-block;
+	font-size: 25px;
+	color: white;
+	text-decoration: none;
+	margin-left: 20px;
+	transition: 0.5s;
+
+}
+.nav-menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #121212;
+	width: 100%;
+	padding: 12px;
+	overflow: hidden;
+	z-index: 10;
+
+}
+
+.nav-logo{
+
+}
+.nav-container{
+	float: right;
+
+}
+.nav-item:hover{
+	transform: scale(1.2);
+}
+.main-section{
+	background: linear-gradient(#bd7171,#ffc997);
+	width: 100%;
+	height: 100vh;
+	/* overflow: hidden; */
+}
+.main-countent{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center; 
+	width: fit-content;
+	z-index: 9;
+}
+.main-title{
+	font-size: 90px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	text-shadow: 10px 5px 1px #e06161;
+}
+.main-btn{
+	display: block;
+	color: black;
+	font-size: 25px;
+	text-decoration: none;
+	background-color: white;
+	height: 70px;
+	border-radius: 40px;
+	line-height: 70px;
+	box-shadow: 10px 7px 1px #db7e7e;
+	padding: 0 20px;
+	margin-top: 10px;
+	margin: 0 auto;
+	width: 340px;
+	text-align: center;
+}
+
+.doing {
+	background: linear-gradient(7deg,#db7e7e 17%, #ff7997 70%,#ffffff 70%);
+}
+
+.doing-left {
+	display: inline-block;
+	width: 47%;
+	vertical-align: top;
+}
+
+.doing-text {
+	background-color: whitesmoke;
+	padding: 30px;
+	box-shadow: 10px 5px 0px #e06161;
+	border-radius: 15px;
+}
+.doing-right {
+	display: inline-block;
+	width: 47%;
+}
+.doing-img {
+	width: 100%;
+}
+.main-bg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0%;
+	top: 0%;
+	overflow: hidden;
+}
+.circle1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:20%;
+	animation: rotate-move 10s ease 0s infinite;
+
+}
+.circle2 {
+	position: absolute;
+	right: 0;
+	width: 20%;
+	animation: move-left-down 10s ease-in 0s infinite;
+
+}
+.circle3 {
+	position: absolute;
+	bottom: 0;
+	left: -30px;
+	width: 30%;
+	animation: move-up-left 8s ease-in 0s infinite;
+}
+.cir-border {
+	position: absolute;
+	bottom: -20px;
+	right: 80%;
+	z-index: 1;
+	animation: move-right 15s ease-out 0s infinite;
+}
+.cir-dashed-border {
+	position: absolute;
+	bottom: -100px;
+	right: -80px;
+	animation: rotate 10s ease-out 0s infinite;
+}
+.triangle {
+	position: absolute;
+	top: 28%;
+	right: 54%; 
+	animation: move-right 25s ease-out 0s infinite;
+	
+}
+.octagon {
+	position: absolute;
+	bottom: 15%;
+	right: 35%;
+	animation: rotate-move 10s ease 0s infinite; 
+}
+.card {
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	border: 5px solid #ffc997;
+	border-radius: 30px;
+	margin: 10px;
+	padding: 15px 10px 130px 10px;
+	background-color: #ffffff;
+	vertical-align: top;
+
+}
+.servises-icon {
+	width: 50%;
+}
+.servises-laiblb {
+	font-size: 21px;
+	padding: 15px 0 ;
+}
+.servises{
+	background: linear-gradient(340deg, #ffffff 45%, #db7f7e 45%);
+
+}
+.servises-line{
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 15px; 
+	height: 3px;
+	background-color:#e06161 ;
+	border: none; 
+}
+.servises-title{
+	color: #ffffff;
+}
+.adv {
+	position: relative;
+}
+.adv-header {
+	text-align: center;
+}
+.container-header {
+	padding: 7px;
+}
+.adv-parag {
+	text-decoration: ;
+}
+.adv-container{
+	border: 4px  solid  #ffc997;
+	border-radius: 10px;	
+	width: 70%;
+	padding: 24px;
+	box-shadow:10px 10px 5px #e06161 ;
+	margin-bottom: 50px;
+	z-index: 10;
+	position: relative;
+	background-color: white;
+}
+.adv-list{
+	padding-left: 24px;
+	list-style-type: circle;
+}
+.adv-container2{
+	position: relative;
+	left: 200px;
+}
+.adv-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0;
+}
+.adv-bg-1 {
+	position: absolute;
+	width: 35% ;
+	right: 0;
+	bottom: 0;
+
+}
+.adv-bg-2 {
+	position: sticky;
+	top: 10%;
+	width:20% ;
+}
+@keyframes  move-up-left{
+	0%{
+		transform: translate(0,0);
+	}
+	50%{
+		transform: translate(40px,80px);
+	}
+	100%{
+		transform: translate(0,0);
+	}
+}
+@keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(359deg);
+	}
+}
+@keyframes move-right{
+	0%{
+		transform: translateX(0);
+	}
+	50%{
+		transform: translateX(200%);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+@keyframes rotate-move{
+	0%{
+		transform: translate(0,0) rotate(0deg);
+	}
+	50%{
+		transform: translate(100px,200px) rotate(180deg);
+	}
+	100%{
+		transform: translate(0,0) rotate(359deg);
+	}
+}
+@keyframes move-left-down {
+	0%{
+		transform: translate(0,0) rotate(0deg);	
+	}	
+	50%{
+		transform: translate(-150px,200px) rotate(180deg);
+	}
+	100%{
+		transform: translate(0,0) rotate(359deg);
+	}
+}
+
+.write{
+	width: 100%;
+	background: linear-gradient(#bd7171,#ffc997);
+}
+.portfolio-card {
+	border: 5px solid #bd7171;
+	width: 45%;
+	height: 400px;
+	display: inline-block;
+	border-radius: 30px;
+	transition: 0.5s;
+	
+}
+.portfolio-card1 {
+	background: url(img/portfolio/site1.png) center/cover no-repeat;
+	
+}
+.portfolio-card2 {
+	background: url(img/portfolio/site2.png) center/cover no-repeat;
+}
+.portfolio-card3 {
+	background: url(img/portfolio/site3.png) center/cover no-repeat;
+}
+.portfolio-card4 {
+	background: url(img/portfolio/site4.png) center/cover no-repeat;
+}
+.portfolio-card:hover{
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+@media(max-width:1000px) {
+	.main-title{
+		font-size: 50px;
+	
+	}
+}
+@media(max-width:900px) {
+	.portfolio-card {
+		width: 90%;
+		height: 400px;	
+	}
+	.doing-right {
+		width: 100%;
+	}
+	.doing-left {	
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.card {
+		width: 46%;
+	}
+
+}
+@media(max-width:840px){
+	.adv{
+	
+	}
+
+}
+@media(max-width:720px){
+	.card {
+		width: 100%;
+	}
+	.adv-container2{
+		left: 0px;
+	}
+	.adv-container{	
+		width: 100%;
+}
+}
